@@ -157,7 +157,7 @@ xgboost的数据结构（类）只有两个： `DMarix` 和 `Booster` 。 `DMatr
 
 **xgb特征重要性有三种不同的计算方式：**
 
-- `weight`**注意这里的权重既不是 leaf-node-score, 也不是二阶导数** ![[公式]](https://www.zhihu.com/equation?tex=h_i+) **而是定义为“该特征用于分裂的次数”。** 
+- `weight`**注意这里的权重既不是 leaf-node-score, 也不是二阶导数，而是定义为“该特征用于分裂的次数”。** 
 - `gain` 前面的公式中的 loss reduction
 - `cover` 定义为”受其影响的样本数数量“
 
