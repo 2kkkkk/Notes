@@ -99,7 +99,7 @@ obj^{(t)}=\sum_{j=1}^{T}[G_jw_j+\frac{1}{2}(H_j+\lambda)w_j^2]+\gamma T
 $$
 对于第t棵CART树的某一个确定的结构（可用q(x)表示），所有的$G_j$和$H_j$都是确定的。而且上式中各个叶子节点的值$w_j $之间是互相独立的。上式其实就是一个简单的一元二次式，我们很容易求出各个叶子节点的最佳值以及此时目标函数的值：
 $$
-w_j^\*=-\frac{G_\j}{H_j +\lambda}
+w_j^\*=-\frac{G_j}{H_j +\lambda}
 $$
 
 $$
@@ -196,5 +196,7 @@ XGB可以用来训练随机森林。随机森林模型与boosting tree 形式上
 ## 参考文献
 
 [深入xgb](https://zhuanlan.zhihu.com/p/91817667)
+
 [xgboost如何使用MAE或MAPE作为目标函数?](https://zhuanlan.zhihu.com/p/34373008)
+
 [How to get or see xgboost's gradient statistics value?](https://stackoverflow.com/questions/44916391/how-to-get-or-see-xgboosts-gradient-statistics-value?r=SearchResults)
